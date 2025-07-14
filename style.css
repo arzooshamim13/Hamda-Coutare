@@ -1,0 +1,226 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    /* background-color: #70dbff; */
+    transition-duration: 0.6s;
+}
+
+nav:hover {
+    background-color: rgba(255, 255, 255, 0.575);
+}
+
+nav .leftSide a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+nav .leftSide a:hover {
+    color: #000;
+
+}
+
+nav .rightSide a i {
+    margin-left: 30px;
+    color: black;
+}
+
+nav .bar{
+    display: none;
+}
+
+/* home */
+.home {
+
+    height: 70vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url("https://humdacouture.com/cdn/shop/files/360_F_608191088_ATXwUHQnOIe67Dnt7JDkzKWHDpgCfuCA-Picsart-AiImageEnhancer.png?v=1747852055&width=1800");
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home .dono {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24% 3%;
+    /* background-color: #70dbff; */
+
+}
+
+.home .dono h1 {
+    font-size: 60px;
+    color: white;
+}
+
+.home .dono p {
+    width: 60%;
+    margin-left: 30%;
+    color: rgb(247, 228, 228);
+}
+
+/* second page */
+
+.secheader {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2% 4%;
+}
+
+.secheader a {
+    background-color: #0000005e;
+    padding: 10px 10px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0% 3%;
+}
+
+.boxi {
+    width: 23%;
+    border: 2px solid red;
+    margin-bottom: 20px;
+}
+
+.boxi img {
+    width: 100%;
+    border: 2px solid red;
+}
+
+/* footer */
+.flexFoot {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4%;
+    padding: 0% 5%;
+}
+.flexFoot .leftFoot {
+    width: 50%;
+}
+.flexFoot .leftFoot p {
+    width: 60%;
+
+}
+.flatFoot .rightFoot{
+    width: 50%;
+}
+.rightFoot input{
+    width: 70%;
+    padding: 8px 30px;
+    border-radius: 5px;
+    border: 1px solid #0000005e;
+}
+.rightFoot button {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid #0000005e;
+    color: black;
+    cursor: pointer;
+}
+
+.flatFoot{
+   padding: 0% 5%;
+   margin-top: 20px;
+}
+.flatFoot a{
+    margin-top: 8px;
+   display: block;
+    margin-bottom: 8px;
+}
+.flatFoot p{
+    margin-top: 10px;
+    color: #0000005e;
+    font-size: 14px;
+    text-align: center;
+}
+
+
+
+/* responsive */
+
+@media only screen and (max-width:527px){
+ nav{
+    
+    justify-content: space-around;
+    padding: 10px 0px;
+ }
+ 
+
+
+ nav .leftSide {
+    display: none;
+ }
+ nav .rightSide a i{
+    display: none;
+ }
+ nav .bar {
+    display: block;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+ }
+
+ /* home */
+
+ .home{
+    background-image: none;
+    background-color: rgb(96, 191, 223);
+ }
+ .home .dono {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20% 0%;
+ }
+ .home .dono h1 {
+    font-size: 40px;
+    text-align: center;
+ }
+ .home .dono p {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+    font-size: 16px;
+ }
+
+ /* secheader */
+ .secheader {
+   
+    align-items: center;
+    justify-content: space-around;
+    /* padding: 2% 0%; */
+ }
+ .box {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+ }
+ .boxi{
+    width: 60%;
+    margin-bottom: 20px;
+ }
+ .boxi img{
+    width: 100%;
+    
+ }
+}
