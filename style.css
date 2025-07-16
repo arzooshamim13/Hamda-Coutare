@@ -223,4 +223,31 @@ nav .bar{
     width: 100%;
     
  }
+    /* footer */
+    .flexFoot {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .flexFoot .leftFoot {
+        width: 100%;
+        text-align: center;
+    }
+    .flexFoot .leftFoot p {
+        width: 100%;
+        margin-left: 0;
+    }
+    .flexFoot .rightFoot {
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
+}
+@media only screen and (max-width:800px){
+     .home{
+    background-image: none;
+    background-color: rgb(96, 191, 223);
+ }
+}
 }
